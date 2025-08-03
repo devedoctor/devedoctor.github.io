@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a clear, attractive font -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for social links -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-3" id="mainNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-light" href="#">DR-DEVELOPER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header with Circular Slider -->
+    <header class="header-section p-5" id="home">
+        <div class="container-fluid h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-1 fw-bolder text-white animate-fade-in-up">Hello, I'm a Full stack Developer</h1>
+                    <p class="lead fw-light text-white my-4">
+                        <span id="sliderText">I am a passionate full stack developer with a focus on creating engaging and responsive user interfaces.web,desktop,mobile and cross-platform apps.</span>
+                    </p>
+                    <a href="#footer" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg fw-bold animate-fade-in-up delay-1">Contact Me</a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
+                    <div class="slider-container">
+                        <div class="slider-image active" data-text="I am a passionate web developer with a focus on creating engaging and responsive user interfaces. I love building things for the web.">
+                            <img src="img/drdeveloper.jpg " class="img-fluid"  alt="Web Development">
+                        </div>
+                        <div class="slider-image" data-text="I specialize in UI/UX design, crafting intuitive and beautiful experiences that delight users and solve real-world problems.">
+                            <img src="https://placehold.co/400x400/6610f2/ffffff?text=UI/UX+Design" class="img-fluid" alt="UI/UX Design">
+                        </div>
+                        <div class="slider-image" data-text="I build cross-platform mobile applications using modern frameworks, ensuring a seamless experience on both iOS and Android.">
+                            <img src="img/lieamra.jpg" class="img-fluid" alt="Mobile Apps">
+                        </div>
+                        <div class="slider-image" data-text="Experienced in deploying and managing cloud-based solutions, I help businesses scale their infrastructure and services efficiently.">
+                            <img src="https://placehold.co/400x400/fd7e14/ffffff?text=Cloud+Solutions" class="img-fluid" alt="Cloud Solutions">
+                        </div>
+                        <div class="slider-image" data-text="I enjoy working with data, using analytics and Administration to uncover insights and drive business decisions.">
+                            <img src="https://placehold.co/400x400/20c997/ffffff?text=Data+Science" class="img-fluid" alt="Data Science">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <marquee width="100%" direction="left" height="50px" class="bg-primary text-white p-3 fw-bolder">
+            I AM DR/MOHAMED ABDOU A FULL STACK SOFTWARE DEVELOPER PROFESSIONAL IN DOT NET FRAMEWORKS , IN ADDITION TO MY FRONT END SKILLS , MY SKILLS IN MEDICAL WORK STIMULATE AND INDUCE MY IDEAS TO CREATE APPS AND APIS AND SOFTWARE THAT UNIQE AND FANCY .
+    </marquee>
+    <!-- Experiences and Skills Section -->
+    <section class="section-padding bg-light p-5" id="skills">
+        <div class="container-fluid">
+            <h2 class="text-center display-5 fw-bold mb-5"> Experiences & Skills</h2>
+            <div class="position-relative">
+                <div class="carousel-container overflow-hidden">
+                    <div class="skills-carousel d-flex justify-content-start align-items-center">
+                        <!-- Skills Cards -->
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/120x120/198754/ffffff?text=ASP.NET" class="rounded-circle mb-3 shadow-sm" alt="React Icon">
+                            <h5 class="fw-bold text-dark">ASP.NET CORE</h5>
+                            <p class="text-muted small">C# RAZOR PAGES PROFESSIONAL DESIGN PATTERNS.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/120x120/6610f2/ffffff?text=Bootstrap" class="rounded-circle mb-3 shadow-sm" alt="Bootstrap Icon">
+                            <h5 class="fw-bold text-dark">Bootstrap 5</h5>
+                            <p class="text-muted small">The world's most popular front-end open source toolkit.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/120x120/d63384/ffffff?text=JavaScript" class="rounded-circle mb-3 shadow-sm" alt="JavaScript Icon">
+                            <h5 class="fw-bold text-dark">JavaScript</h5>
+                            <p class="text-muted small">The programming language of the web.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/120x120/fd7e14/ffffff?text=HTML5" class="rounded-circle mb-3 shadow-sm" alt="HTML5 Icon">
+                            <h5 class="fw-bold text-dark">HTML5</h5>
+                            <p class="text-muted small">The latest standard for Hypertext Markup Language.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/120x120/20c997/ffffff?text=CSS" class="rounded-circle mb-3 shadow-sm" alt="CSS3 Icon">
+                            <h5 class="fw-bold text-dark">CSS</h5>
+                            <p class="text-muted small">Used for styling the presentation of web pages.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/120x120/198754/ffffff?text=Blazor/Maui" class="rounded-circle mb-3 shadow-sm" alt="Node.js Icon">
+                            <h5 class="fw-bold text-dark">Blazor- Maui</h5>
+                            <p class="text-muted small">A frameworks that builds responsive cross-platform applications.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-target="skills-carousel" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-target="skills-carousel" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <marquee width="100%" direction="left" height="50px" class="bg-primary text-white p-3 fw-bolder">
+        Expert software full-stack developer delivering end-to-end web,desktop,mobile solutions, from robust back-end APIs to responsive front-end interfaces, ensuring seamless performance and scalability.
+    </marquee>
+    <!-- Services Section -->
+    <section class="section-padding bg-white  p-5" id="services">
+        <div class="container-fluid">
+            <h2 class="text-center display-5 fw-bold mb-5">Services I Offer</h2>
+            <div class="position-relative">
+                <div class="carousel-container overflow-hidden">
+                    <div class="services-carousel d-flex justify-content-start align-items-center">
+                        <!-- Services Cards -->
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/0d6efd/ffffff?text=Web+Development" class="rounded-circle mb-3 shadow-sm" alt="Web Development Icon">
+                            <h5 class="fw-bold text-dark">Web Development</h5>
+                            <p class="text-muted small">Building bespoke websites from scratch.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/6610f2/ffffff?text=Responsive+Design" class="rounded-circle mb-3 shadow-sm" alt="Responsive Design Icon">
+                            <h5 class="fw-bold text-dark">Responsive Design</h5>
+                            <p class="text-muted small">Making sure your site looks great on all devices for ewb or desktop apps.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/d63384/ffffff?text=E-commerce" class="rounded-circle mb-3 shadow-sm" alt="E-commerce Icon">
+                            <h5 class="fw-bold text-dark">E-commerce Solutions</h5>
+                            <p class="text-muted small">Developing secure and user-friendly online stores.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/fd7e14/ffffff?text=API+Integration" class="rounded-circle mb-3 shadow-sm" alt="API Integration Icon">
+                            <h5 class="fw-bold text-dark">API Integration</h5>
+                            <p class="text-muted small">Connecting your application with various services.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/20c997/ffffff?text=SEO" class="rounded-circle mb-3 shadow-sm" alt="SEO Icon">
+                            <h5 class="fw-bold text-dark">SEO Optimization</h5>
+                            <p class="text-muted small">Improving your website's visibility and ranking.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/198754/ffffff?text=CMS" class="rounded-circle mb-3 shadow-sm" alt="CMS Icon">
+                            <h5 class="fw-bold text-dark">Content Management</h5>
+                            <p class="text-muted small">Building tools for easy content updates.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/dc3545/ffffff?text=Mobile" class="rounded-circle mb-3 shadow-sm" alt="Audit Icon">
+                            <h5 class="fw-bold text-dark">Mobile Apps</h5>
+                            <p class="text-muted small"> Android, iOS and macOS cross-platform applications.</p>
+                        </div>
+                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
+                            <img src="https://placehold.co/150x150/ffc107/ffffff?text=Support" class="rounded-circle mb-3 shadow-sm" alt="Support Icon">
+                            <h5 class="fw-bold text-dark">Maintenance & Support</h5>
+                            <p class="text-muted small">Dba and backup info , Ongoing support to keep your site or apps running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-target="services-carousel" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-target="services-carousel" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"  class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>About Me</h3>
+                    <p>I'm an Expert full-stack developer delivering end-to-end cross-platform solutions, from robust back-end APIs to responsive front-end interfaces, ensuring seamless performance and scalability.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mohammed.hamada.595775" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/lieamra2010" target="_blank" ><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-hamada-35b7b7273/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/devedoctor" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Experience</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Al-Omra , Makkah, Saudi Arabia</li>
+                        <li><i class="fas fa-phone"></i> +966 544781101 - +2 01111809777</li>
+                        <li><i class="fas fa-envelope"></i> Doctordeveloper@Gmail.com</li>
+                        <li><i class="fas fa-envelope"></i> Doctordeveloper@Lieamra.com</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </hr>
+        <div class="footer-bottom text-center mt-4 pt-4">
+            <p>&copy; 2025 Dr-Developer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
