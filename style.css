@@ -26,6 +26,11 @@ body {
     /* A vibrant teal color with transparency */
     backdrop-filter: blur(5px);
     transition: background-color 0.3s ease-in-out;
+    margin-left: 11px;
+    margin-right: 11px; 
+    
+    margin-bottom: 8px; 
+    border-radius: 10px;   
 }
 
 .navbar-brand {
@@ -57,9 +62,13 @@ body {
     justify-content: center;
     color: #fff;
     padding-top: 80px;
+     border-radius: 10px; 
     /* To account for the fixed navbar */
 }
-
+.mrqee{
+    border-radius: 10px; 
+    margin-top: 5px;
+}
 
 /* Header Text Animation */
 
@@ -231,6 +240,8 @@ body {
     padding: 80px 0 30px;
     background:rgb(100,25,225);
     font-weight: bold;
+    border-radius: 10px; 
+    margin-bottom: 10px;
 }
 
 .footer-section h3 {
