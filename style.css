@@ -87,8 +87,8 @@ body {
 
 .slider-container {
     position: relative;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
     border-radius: 50%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -338,4 +338,5 @@ body {
 a,
 .btn {
     text-decoration: none;
+
 }
