@@ -22,7 +22,12 @@ body {
 }
 
 /* Navbar Styling */
-
+.nlogo {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 #mainNavbar {
   background-color: rgb(100, 25, 225, 0.9);
   /* A vibrant teal color with transparency */
@@ -43,7 +48,7 @@ body {
 .navbar-brand:hover {
   color: #390341 !important;
   text-shadow: 0 0 10px #fff;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 .nav-link {
   font-size: 1.1rem;
@@ -389,3 +394,4 @@ a,
 .btn {
   text-decoration: none;
 }
+
