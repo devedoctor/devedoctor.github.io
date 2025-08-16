@@ -1,7 +1,7 @@
 /* Custom CSS for Portfolio Website */
 
 :root {
-  --bg-color: #fff;
+  --bg-color: #ffffff;
   --snd-bg-color: rgb(215, 199, 233);
   --main-color: rgb(103, 27, 199);
 }
@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f8f9fa;
+  background-color: #3a0c41;
   color: #343a40;
   overflow-x: hidden;
 }
@@ -17,7 +17,7 @@ body {
 /* Section Padding */
 
 .section-padding {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 10rem 9% 2rem;
 }
 
@@ -187,12 +187,12 @@ body {
   min-width: 300px;
   /* Smallest card width */
   max-width: 100%;
-  background: #fff;
+  background: #262afc11;
   border-radius: 1.5rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .card-item:hover {
@@ -216,7 +216,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(3, 201, 168, 0.8);
+  background: rgba(65, 3, 107, 0.8);
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -229,7 +229,7 @@ body {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   opacity: 1;
-  background: #068a53;
+  background: #f6b6fc;
 }
 
 .carousel-control-prev {
