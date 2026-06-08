@@ -1,259 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Developer</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for a clear, attractive font -->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Lucide Icons for social links -->
-    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <title>Mohamed Abdou | Pharmacist & Full-Stack Developer</title>
+    <meta name="description" content="Mohamed Abdou - HealthTech Specialist, Pharmacist & Full-Stack Developer with 15+ years experience">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
-<body>
-
-    <!-- Responsive Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-3 mb-5" id="mainNavbar">
-        <div class="container-fluid">
-         <img src="img/mealieamra.png " class="nlogo" alt="doctor-developer">
-            <a class="navbar-brand fw-bold text-light" href="#">DR-DEVELOPER</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-icon"><img src="img/lieamra.png" class="rounded" alt="lieamra"></span>
+                <span class="brand-text">Mohamed<span class="brand-accent">Abdou</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#footer">Contact</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                <div class="theme-toggle ms-3">
+                    <button id="theme-toggle-navbar" class="theme-toggle-btn" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="text-center mt-5 pt-4">
-                    <h1 class="display-4 fw-bold text-white"></h1>
-                    <p class="lead text-white"></p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <i class="fas fa-user-md"></i>
+                            <span>HealthTech Specialist</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Hi, I'm <br><span class="gradient-text">Mohamed Abdou</span>
+                        </h1>
+                        <h2 class="hero-subtitle">
+                            <span class="typewriter"></span>
+                        </h2>
+                        <p class="hero-description">
+                            A dual-career professional bridging the gap between clinical pharmacy and software development. 
+                            15+ years in pharmacy practice, 8+ years in .NET development.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary-custom">
+                                <span>Hire Me</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline-custom">
+                                <span>View Projects</span>
+                                <i class="fas fa-folder-open"></i>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">Years Pharmacy</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8">0</span>
+                                <span class="stat-label">Years Development</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">+ Projects</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>  
-    <!-- Header with Circular Slider -->
-    <header class="header-section p-5 " id="home">
-        <div class="container-fluid h-100">
-            <div class="row align-items-center h-100">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-1 fw-bolder text-white animate-fade-in-up">Hello, I'm a Full stack Developer</h1>
-                    <p class="lead fw-light text-white my-4">
-                        <span id="sliderText">I am a passionate full stack developer with a focus on creating engaging and responsive user interfaces.web,desktop,mobile and cross-platform apps.</span>
-                    </p>
-                    <a href="#footer" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg fw-bold animate-fade-in-up delay-1">Contact Me</a>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
-                    <div class="slider-container">
-                        <div class="slider-image active" data-text="I am a passionate full stack developer with a focus on creating engaging and responsive user interfaces.web,desktop,mobile and cross-platform apps.">
-                            <img src="img/drdeveloper.jpg " class="img-fluid"  alt="Web Development">
-                        </div>
-                        <div class="slider-image" data-text="I specialize in UI/UX design, crafting intuitive and beautiful experiences that delight users and solve real-world problems.">
-                            <img src="https://placehold.co/400x400/6610f2/ffffff?text=UI/UX+Design" class="img-fluid" alt="UI/UX Design">
-                        </div>
-                        <div class="slider-image" data-text="I worked and still work at Lieamra software engineering company since 2010 as full stack develper and team leader.">
-                            <img src="img/lieamra.jpg" class="img-fluid" alt="Mobile Apps">
-                        </div>
-                        <div class="slider-image" data-text="Experienced in deploying and managing cloud-based solutions, I help businesses scale their infrastructure and services efficiently.">
-                            <img src="https://placehold.co/400x400/fd7e14/ffffff?text=Cloud+Solutions" class="img-fluid" alt="Cloud Solutions">
-                        </div>
-                        <div class="slider-image" data-text="I enjoy working with data, using analytics and Administration to uncover insights and drive business decisions.">
-                            <img src="https://placehold.co/400x400/20c997/ffffff?text=Data+Science" class="img-fluid" alt="Data Science">
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <div class="hero-image-wrapper" data-aos="fade-left">
+                        <div class="hero-image-container">
+                            <div class="image-ring ring-1"></div>
+                            <div class="image-ring ring-2"></div>
+                            <div class="image-ring ring-3"></div>
+                            <div class="hero-image">
+                                <div class="profile-avatar">
+                                   <img src="img/mealieamra.png" class="rounded" alt="<img src="img/lieamra.png" class="rounded" alt="lieamra">
+                                </div>
+                            </div>
+                            <div class="floating-card card-1">
+                                <i class="fas fa-code"></i>
+                                <span>Full-Stack</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-pills"></i>
+                                <span>Pharmacist</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-database"></i>
+                                <span>SQL Expert</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <marquee width="100%" direction="left" height="50px" class=" mrqee bg-primary text-white p-3 fw-bolder">
-            I AM DR/MOHAMED ABDOU A FULL STACK SOFTWARE DEVELOPER PROFESSIONAL IN DOT NET FRAMEWORKS , IN ADDITION TO MY FRONT END SKILLS , MY SKILLS IN MEDICAL WORK STIMULATE AND INDUCE MY IDEAS TO CREATE APPS AND APIS AND SOFTWARE THAT UNIQE AND FANCY .
-    </marquee>
-    <!-- Experiences and Skills Section -->
-    <section class="section-padding bg-light p-5" id="skills">
-        <div class="container-fluid">
-            <h2 class="text-center display-5 fw-bold mb-5"> Experiences & Skills</h2>
-            <div class="position-relative">
-                <div class="carousel-container overflow-hidden">
-                    <div class="skills-carousel d-flex justify-content-start align-items-center">
-                        <!-- Skills Cards -->
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/120x120/198754/ffffff?text=ASP.NET" class="rounded-circle mb-3 shadow-sm" alt="React Icon">
-                            <h5 class="fw-bold text-dark">ASP.NET CORE</h5>
-                            <p class="text-muted small">C# RAZOR PAGES PROFESSIONAL DESIGN PATTERNS.</p>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--bg-secondary)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image-wrapper" data-aos="fade-right">
+                        <div class="about-image-main">
+                            <div class="about-avatar">
+                               <img src="img/logo.png" class="rounded" alt="lieamra" class="rounded" >
+                            </div>
+                            <div class="experience-badge">
+                                <span class="exp-number">23+</span>
+                                <span class="exp-text">Years Combined<br>Experience</span>
+                            </div>
                         </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/120x120/6610f2/ffffff?text=Bootstrap" class="rounded-circle mb-3 shadow-sm" alt="Bootstrap Icon">
-                            <h5 class="fw-bold text-dark">Bootstrap 5</h5>
-                            <p class="text-muted small">The world's most popular front-end open source toolkit.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/120x120/d63384/ffffff?text=JavaScript" class="rounded-circle mb-3 shadow-sm" alt="JavaScript Icon">
-                            <h5 class="fw-bold text-dark">JavaScript</h5>
-                            <p class="text-muted small">The programming language of the web.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/120x120/fd7e14/ffffff?text=HTML5" class="rounded-circle mb-3 shadow-sm" alt="HTML5 Icon">
-                            <h5 class="fw-bold text-dark">HTML5</h5>
-                            <p class="text-muted small">The latest standard for Hypertext Markup Language.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/120x120/20c997/ffffff?text=CSS" class="rounded-circle mb-3 shadow-sm" alt="CSS3 Icon">
-                            <h5 class="fw-bold text-dark">CSS</h5>
-                            <p class="text-muted small">Used for styling the presentation of web pages.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/120x120/198754/ffffff?text=Blazor/Maui" class="rounded-circle mb-3 shadow-sm" alt="Node.js Icon">
-                            <h5 class="fw-bold text-dark">Blazor- Maui</h5>
-                            <p class="text-muted small">A frameworks that builds responsive cross-platform applications.</p>
-                        </div>
-                        
+                        <div class="about-shape"></div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" data-target="skills-carousel" type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-target="skills-carousel" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+                <div class="col-lg-7">
+                    <div class="about-content" data-aos="fade-left">
+                        <h3 class="about-title">HealthTech Specialist & Full-Stack Developer</h3>
+                        <p class="about-text">
+                            Highly versatile professional with a unique dual-career background. I bring <strong>15 years of clinical pharmacy practice</strong> 
+                            combined with <strong>8 years of software development</strong> specializing in the .NET ecosystem.
+                        </p>
+                        <p class="about-text">
+                            My expertise lies in bridging the gap between clinical workflows and technical solutions. I have a proven track record 
+                            in hospital and retail pharmacy management, coupled with the ability to build and maintain robust 
+                            <strong>Pharmacy Management Systems</strong>.
+                        </p>
+                        <div class="about-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">Developerpharmacist@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value">+966 54 478 1101</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Al-Omra, Makkah, KSA</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <span class="info-label">Degree</span>
+                                    <span class="info-value">Bachelor of Pharmaceutical Sciences</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary-custom">Contact Me</a>
+                            <a href="https://github.com/devedoctor?tab=repositories" target="_blank" class="btn btn-outline-custom">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <marquee width="100%" direction="left" height="50px" class="mrqee bg-primary text-white p-3 fw-bolder">
-        Expert software full-stack developer delivering end-to-end web,desktop,mobile solutions, from robust back-end APIs to responsive front-end interfaces, ensuring seamless performance and scalability.
-    </marquee>
-    <!-- Services Section -->
-    <section class="section-padding bg-white  p-5" id="services">
-        <div class="container-fluid">
-            <h2 class="text-center display-5 fw-bold mb-5">Services I Offer</h2>
-            <div class="position-relative">
-                <div class="carousel-container overflow-hidden">
-                    <div class="services-carousel d-flex justify-content-start align-items-center">
-                        <!-- Services Cards -->
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/0d6efd/ffffff?text=Web+Development" class="rounded-circle mb-3 shadow-sm" alt="Web Development Icon">
-                            <h5 class="fw-bold text-dark">Web Development</h5>
-                            <p class="text-muted small">Building bespoke websites from scratch.</p>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Expertise</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <!-- Technical Skills -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i> Languages & Frameworks
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C# / ASP.NET Core MVC</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
                         </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/6610f2/ffffff?text=Responsive+Design" class="rounded-circle mb-3 shadow-sm" alt="Responsive Design Icon">
-                            <h5 class="fw-bold text-dark">Responsive Design</h5>
-                            <p class="text-muted small">Making sure your site looks great on all devices for ewb or desktop apps.</p>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Entity Framework</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
                         </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/d63384/ffffff?text=E-commerce" class="rounded-circle mb-3 shadow-sm" alt="E-commerce Icon">
-                            <h5 class="fw-bold text-dark">E-commerce Solutions</h5>
-                            <p class="text-muted small">Developing secure and user-friendly online stores.</p>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Web API</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
                         </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/fd7e14/ffffff?text=API+Integration" class="rounded-circle mb-3 shadow-sm" alt="API Integration Icon">
-                            <h5 class="fw-bold text-dark">API Integration</h5>
-                            <p class="text-muted small">Connecting your application with various services.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/20c997/ffffff?text=SEO" class="rounded-circle mb-3 shadow-sm" alt="SEO Icon">
-                            <h5 class="fw-bold text-dark">SEO Optimization</h5>
-                            <p class="text-muted small">Improving your website's visibility and ranking.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/198754/ffffff?text=CMS" class="rounded-circle mb-3 shadow-sm" alt="CMS Icon">
-                            <h5 class="fw-bold text-dark">Content Management</h5>
-                            <p class="text-muted small">Building tools for easy content updates.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/dc3545/ffffff?text=Mobile" class="rounded-circle mb-3 shadow-sm" alt="Audit Icon">
-                            <h5 class="fw-bold text-dark">Mobile Apps</h5>
-                            <p class="text-muted small"> Android, iOS and macOS cross-platform applications.</p>
-                        </div>
-                        <div class="card-item d-flex flex-column align-items-center text-center p-4">
-                            <img src="https://placehold.co/150x150/ffc107/ffffff?text=Support" class="rounded-circle mb-3 shadow-sm" alt="Support Icon">
-                            <h5 class="fw-bold text-dark">Maintenance & Support</h5>
-                            <p class="text-muted small">Dba and backup info , Ongoing support to keep your site or apps running smoothly.</p>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript / jQuery</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" data-target="services-carousel" type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-target="services-carousel" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+                <!-- Database Skills -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-database"></i> Database Management
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL Server / T-SQL</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Database Optimization</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure Cloud</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ERP Integration with API</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Cards -->
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4>Clinical Pharmacy</h4>
+                        <p>Hospital & Retail Practice</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Medication Safety</h4>
+                        <p>Regulatory Compliance</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h4>Inventory Management</h4>
+                        <p>Pharmaceutical Supply Chain</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Workflow Optimization</h4>
+                        <p>Cross-functional Leadership</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="languages-section mt-5">
+                <h3 class="text-center mb-4" data-aos="fade-up">Languages</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="language-item">
+                            <div class="language-flag">🇬🇧</div>
+                            <h5>English</h5>
+                            <span class="level">Fluent</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="language-item">
+                            <div class="language-flag">🇫🇷</div>
+                            <h5>French</h5>
+                            <span class="level">Good</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="language-item">
+                            <div class="language-flag">🇸🇦</div>
+                            <h5>Arabic</h5>
+                            <span class="level">Native</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="language-item">
+                            <div class="language-flag">🇪🇸</div>
+                            <h5>Spanish</h5>
+                            <span class="level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Pharmacy Management Systems</h3>
+                        <p class="service-description">
+                            Custom PMS development using C# and SQL Server, including inventory tracking, 
+                            prescription processing, and automated dispensing workflows.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Desktop Applications</li>
+                            <li><i class="fas fa-check"></i> Cloud Integration (Azure)</li>
+                            <li><i class="fas fa-check"></i> E-Prescribing APIs</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3 class="service-title">Healthcare IT Consulting</h3>
+                        <p class="service-description">
+                            Bridging clinical workflows with technical solutions. Translating complex 
+                            clinical requirements into technical specifications for development teams.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Workflow Analysis</li>
+                            <li><i class="fas fa-check"></i> System Integration</li>
+                            <li><i class="fas fa-check"></i> Compliance Consulting</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="service-title">Database Design & Optimization</h3>
+                        <p class="service-description">
+                            Expert SQL Server database design, optimization, and management for 
+                            high-volume healthcare data with focus on security and performance.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Database Architecture</li>
+                            <li><i class="fas fa-check"></i> Performance Tuning</li>
+                            <li><i class="fas fa-check"></i> Data Migration</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="service-title">API Integration</h3>
+                        <p class="service-description">
+                            ERP integration with APIs, automated insurance verification workflows, 
+                            and third-party healthcare system integrations.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> RESTful APIs</li>
+                            <li><i class="fas fa-check"></i> ERP Integration</li>
+                            <li><i class="fas fa-check"></i> Insurance Verification</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Medical Apps Development</h3>
+                        <p class="service-description">
+                            Clinic management systems and medical applications using ASP.NET Core MVC 
+                            with modern, responsive user interfaces.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Clinic Management</li>
+                            <li><i class="fas fa-check"></i> Patient Portals</li>
+                            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="service-title">Training & Support</h3>
+                        <p class="service-description">
+                            Comprehensive training for pharmacy staff on software systems, 
+                            ongoing technical support, and system maintenance services.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> User Training</li>
+                            <li><i class="fas fa-check"></i> Technical Support</li>
+                            <li><i class="fas fa-check"></i> System Maintenance</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> Current - Liemra Company, Egypt
+                        </div>
+                        <h3 class="timeline-title">HealthTech Consultant / Software Developer</h3>
+                        <ul class="timeline-list">
+                            <li>Developed and maintained modules for Pharmacy Management Software using C# and ASP.NET</li>
+                            <li>Designed and optimized SQL databases for high-volume patient data</li>
+                            <li>Translated complex clinical requirements into technical specifications</li>
+                            <li>Integrated e-prescribing APIs and automated insurance verification workflows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> Previous - Egypt Railway Hospital
+                        </div>
+                        <h3 class="timeline-title">Senior Pharmacist - Hospital Pharmacy</h3>
+                        <ul class="timeline-list">
+                            <li>Managed medication dispensing and clinical review in high-volume hospital environment</li>
+                            <li>Collaborated with medical staff for optimal therapeutic outcomes</li>
+                            <li>Supervised implementation of automated dispensing cabinets</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> 2009 - Present - KSA
+                        </div>
+                        <h3 class="timeline-title">Senior Pharmacist - Retail Pharmacies</h3>
+                        <ul class="timeline-list">
+                            <li><strong>Shifa-Alsaada Pharmacy</strong> (2023 - 2026) - Makkah, KSA</li>
+                            <li><strong>Al-Khair Pharmacy</strong> (2013 - 2019) - Makkah, KSA</li>
+                            <li><strong>Eltehal Pharmacy</strong> (2009 - 2013) - Makkah, KSA</li>
+                            <li>Directed daily operations, ensured 100% regulatory compliance</li>
+                            <li>Optimized inventory turnover, reducing waste by ~15%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications-section mt-5">
+                <h3 class="text-center mb-4" data-aos="fade-up">Certifications</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-card">
+                            <i class="fab fa-microsoft"></i>
+                            <h5>Microsoft Full Stack .NET Developer</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-card">
+                            <i class="fas fa-infinity"></i>
+                            <h5>Board Infinity Full Stack Developer</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-card">
+                            <i class="fab fa-google"></i>
+                            <h5>Google IT Support Professional</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-card">
+                            <i class="fas fa-database"></i>
+                            <h5>IBM SQL Database Administration</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-icon-bg">
+                                <i class="fas fa-prescription-bottle-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Pharmacy Management System (PMS)</h3>
+                            <p>Desktop application built with C# and SQL Server for comprehensive pharmacy operations management.</p>
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>SQL Server</span>
+                                <span>Azure</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/devedoctor?tab=repositories" target="_blank" class="btn btn-sm btn-outline-custom">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-icon-bg">
+                                <i class="fas fa-hospital-user"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Medical Apps - Clinic Management</h3>
+                            <p>Web-based clinic management system using ASP.NET Core MVC and SQL Server for healthcare providers.</p>
+                            <div class="project-tech">
+                                <span>ASP.NET Core</span>
+                                <span>MVC</span>
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/devedoctor?tab=repositories" target="_blank" class="btn btn-sm btn-outline-custom">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Let's Discuss Your Project</h3>
+                        <p class="contact-description">
+                            Ready to transform your healthcare operations with technology? 
+                            Let's discuss how I can help bring your vision to life.
+                        </p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <p>Developerpharmacist@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Phone</h5>
+                                    <p>+966 54 478 1101</p>
+                                    <p>+966 50 985 8165</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Location</h5>
+                                    <p>Al-Omra, Makkah, Kingdom of Saudi Arabia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h5>Follow Me</h5>
+                            <div class="social-links">
+                                <a href="https://github.com/devedoctor" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:Developerpharmacist@gmail.com" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xqkyzkyv" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer"  class="footer-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h3>About Me</h3>
-                    <p>I'm an Expert full-stack developer delivering end-to-end cross-platform solutions, from robust back-end APIs to responsive front-end interfaces, ensuring seamless performance and scalability.</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/mohammed.hamada.595775" target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/lieamra2010" target="_blank" ><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/mohammed-hamada-35b7b7273/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/devedoctor" target="_blank"><i class="fab fa-github"></i></a>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-brand">
+                                <span class="brand-icon"><i class="fas fa-code"></i></span>
+                                <span class="brand-text">Mohamed<span class="brand-accent">Abdou</span></span>
+                            </div>
+                            <p class="footer-text">
+                                HealthTech Specialist bridging clinical pharmacy expertise with cutting-edge 
+                                software development to create innovative healthcare solutions.
+                            </p>
+                            <div class="footer-social">
+                                <a href="https://github.com/devedoctor" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:Developerpharmacist@gmail.com" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                                <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                                <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                                <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-title">Services</h4>
+                            <ul class="footer-links">
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i> PMS Development</a></li>
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i> Healthcare IT Consulting</a></li>
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i> Database Design</a></li>
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i> API Integration</a></li>
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i> Medical Apps</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-title">Contact Info</h4>
+                            <ul class="footer-contact">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Developerpharmacist@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+966 54 478 1101</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Al-Omra, Makkah, KSA</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#skills">Experience</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Contact Info</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Al-Omra , Makkah, Saudi Arabia</li>
-                        <li><i class="fas fa-phone"></i> +966 544781101 - +2 01111809777</li>
-                        <li><i class="fas fa-envelope"></i> Doctordeveloper@Gmail.com</li>
-                        <li><i class="fas fa-envelope"></i> Doctordeveloper@Lieamra.com</li>
-                    </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">
+                            © 2026 <span>Mohamed Abdou</span>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-credit-section d-flex align-items-center justify-content-end gap-3">
+                            <p class="footer-credit mb-0">
+                                Designed with <i class="fas fa-heart"></i> by Mohamed Abdou
+                            </p>
+                            <button id="theme-toggle-footer" class="theme-toggle-btn" aria-label="Toggle theme">
+                                <i class="fas fa-sun"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
-        </hr>
-        <div class="footer-bottom text-center mt-4 pt-4">
-            <p>&copy; 2025 Dr-Developer. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
